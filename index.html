@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Karla Moreno</title>
+
+    <!-- Google Fonts para una tipografía más atractiva -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(248, 240, 244);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #0073e6;
+            color: white;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h2 {
+            color: #fff;
+            font-size: 1.5em;
+        }
+        p {
+            color: #fff;
+            font-size: 1.2em;
+            margin-top: 15px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Animación para entrada de los títulos */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Estilo para las secciones */
+        section {
+            margin: 40px 0;
+            padding: 40px 20px;
+            width: 90%;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h3 {
+            font-size: 2em;
+            color: #0073e6;
+            margin-bottom: 20px;
+        }
+
+        ol, ul {
+            text-align: left;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        /* Estilo de los enlaces */
+        a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 20px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #005bb5;
+        }
+
+        /* Estilo de las imágenes */
+        .portfolio-images img {
+            width: 30vw;
+            max-width: 500px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo para los botones */
+        .contact-info span {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+            background-color: #0073e6;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .contact-info span:hover {
+            background-color: #005bb5;
+            transform: translateY(-3px);
+        }
+
+        /* Formulario de contacto */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 600px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 12px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .portfolio-images img {
+                width: 80vw;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .contact-info span {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+
+            button {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Karla Moreno</h1>
+        <h2>Community Manager</h2>
+        <p>¡Bienvenido a mi portafolio! Aquí te cuento más sobre mis servicios y cómo puedo ayudarte a mejorar tu presencia en redes sociales.</p>
+    </header>
+
+    <section>
+        <h3>Servicios</h3>
+        <ol>
+            <li>Servicios de Community Manager para gestionar tu presencia online, crear contenido atractivo y aumentar la interacción con tu comunidad.</li>
+        </ol>
+        <ul>
+            <li>Gestión de redes sociales</li>
+            <li>Estrategia de crecimiento</li>
+            <li>Análisis y reportes</li>
+        </ul>
+    </section>
+
+    <section>
+        <a href="https://github.com/Karlaebollar11/Karlaebollar11" target="_blank">
+            <h3>Visita mi Github</h3>
+        </a>
+    </section>
+
+    <section class="portfolio-images">
+        <h3>Mis Proyectos</h3>
+        <img src="https://149562642.v2.pressablecdn.com/wp-content/uploads/fotografo-1140x600.jpg" alt="Proyecto 1">
+        <img src="https://somosperiodismo.es/wp-content/uploads/2020/02/Community-Manager.jpg" alt="Proyecto 2">
+    </section>
+
+    <section class="contact-info">
+        <h3>Contáctame</h3>
+        <form action="mailto:tu-email@dominio.com" method="POST" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <span>Agenda tu cita</span>
+    </section>
+</body>
+</html>
+
+
+
+
+    
+</html>
