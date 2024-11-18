@@ -1,6 +1,5 @@
 # Mi Proyecto
-# Repositorio-1
-# Repositorio-1
-# Repositorio-1
-# Repositorio-1
-# Repositorio-1
+Creación de mi primera página web, lo hice enfocado a mi portafolio de community manager 
+
+
+
